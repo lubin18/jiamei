@@ -1,0 +1,138 @@
+<!--index.wxml-->
+<view wx:if="{{isHide}}">
+    <view>
+        <view class='header'>
+            <image src='../images/logo2.png'></image>
+        </view>
+
+        <view class='content1'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+        
+        <view class='cbtn' wx:if="{{!hasphone && canIUsep}}">
+          <button  class='bottom' type='primary'  open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber"> 获取手机号 </button>
+        </view>
+        <view class='cbtn' wx:else>
+          <button class='bottom' type='primary' wx:if="{{!hasUserInfo && canIUse}}"  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <!-- <view wx:else>请升级微信版本</view> -->
+        </view>
+
+        <!-- <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">
+            授权登录
+        </button> -->
+    </view>
+    <!-- <view>请升级微信版本</view> -->
+</view>
+
+<view wx:else>
+    
+  
+    
+<view class="container">
+  <!-- 头部 -->
+  <view class='topindex'>
+  <!-- 头部搜索 -->
+    <view class='searchtop'>
+          <view class='searchbox'>
+            <view class='searchleft'>
+                <input class='searchinput' placeholder="大家都在搜：隆鼻" placeholder-style="color:#fff;  font-size:28rpx;" selection-start="1" selection-end="-1" start="-1"></input>
+                <icon class='iconfont icon-search tubiao'></icon>
+            </view>
+            <view class='searchright'>
+                  <icon class='iconfont icon-xinxi tubiao2 '></icon>  
+            </view>
+          </view>
+    </view>
+    <!-- 头部公告 -->
+    <view class='gonggao'>
+      <view class='ggbox'>
+        <view class='ggboxleft'>
+          <text>公告</text>
+          <text class='shux'></text>
+          <icon class='iconfont icon-laba3'></icon>
+        </view>
+        <view class='paom' >
+          <view class='paomtext'style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}rpx;">{{paomatext}}</view>
+        </view>   
+      </view>
+       <!-- <button bindtap='stop'>stop</button> -->
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class='banner'>
+      <swiper autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" circular="true" duration="{{banner.duration}}" circular="banner.circular">
+          <block wx:for="{{urlimg}}"  wx:for-items="{{urlimg}}" wx:key="navItems"  wx:for-index="itemIdx" >
+              <swiper-item >
+                  <image src="{{item.img}}" class="slide-image"></image>
+              </swiper-item>
+          </block>
+      </swiper>
+  </view>
+  <!-- 中间导航部分 -->
+  <view class='mdnav'>
+      <navigator url="">
+            <image src="../images/shangpin.png"></image>
+            <text>全部商品</text>
+      </navigator>
+      <navigator url="">
+             <image src="../images/gouwuche.png"></image>
+            <text>购物车</text>
+      </navigator>
+      <navigator url="">
+             <image src="../images/dingdan.png"></image>
+            <text>我的订单</text>
+      </navigator>
+      <navigator url="">
+             <image src="../images/yanzhiguan.png"></image>
+            <text>颜值馆</text>
+      </navigator>
+      <navigator url="">
+             <image src="../images/indexfuwu.png"></image>
+            <text>服务</text>
+      </navigator>
+  </view> 
+  <!-- 导航下面的图片活动 -->
+  <view class='picexercise'>
+      <image src='{{zuo}}' class='exer1'></image>
+      <image src='{{you}}' class='exer2'></image>
+      <image src='{{chang}}' class='exer3'></image>
+  </view>
+  <!-- table切换 -->
+  <view class='tbcontainer' scroll-x="true" style='display:flex;flex-wrap:nowrap;width:auto;overflow-x:auto'>
+  <!-- 头部 -->
+    <view class='tbheader' wx:for="{{goods_cat}}"  wx:key="{{item.index}}">
+        <!-- <view class='{{currentTab==0"tbactive":""}}' data-current="0" data-id="{{item.id}}"  bindtap='swichNav'>全部</view>
+        <view class='{{currentTab==1?"tbactive":""}}' data-current="1" data-id="{{item.id}}"  bindtap='swichNav'>全部</view>
+        <view class='{{currentTab==2?"tbactive":""}}' data-current="2" data-id="{{item.id}}"  bindtap='swichNav'>全部</view>
+        <view class='{{currentTab==3?"tbactive":""}}' data-current="3" data-id="{{item.id}}"  bindtap='swichNav'>全部</view>
+        <view class='{{currentTab==4?"tbactive":""}}' data-current="4" data-id="{{item.id}}"  bindtap='swichNav'>全部</view> -->
+        <view class='{{currentTab==index?"tbactive":""}}' data-current="{{index}}" data-id="{{item.id}}"  bindtap='swichNav'>{{item.name}}</view>
+        
+    </view>
+    
+  </view>
+<!-- <swiper class='tbcontent' style="height:{{winHeight}}rpx;" duration="200" skip-hidden-item-layout="true"  current="{{currentTab}}" display-multiple-items="0">
+          <swiper-item class='tbsilde' wx:for="{{goods_cat}}" catchtouchmove="stopTouchMove">
+               <scroll-view class='tbbox' scroll-y="true" >
+                  <view class='tbcon' >
+                    <block wx:for="{{goods_list}}" wx:key="{{index}}">
+                      <view class='tb' data-id="{{item.id}}">
+                        <image src='{{item.good_img}}' class='tbtop'></image>
+                          <text class='tbtitle'>{{item.name}}</text>
+                          <view class='tbbottom'>
+                              <view class='tbbottomright'>
+                                  <text class='tbm1'>￥</text>
+                                  <text  class='tbm2'>{{item.price}}</text>
+                              </view>
+                              <image src='../images/gouwuche2.png' class='tbbottomleft'></image>
+                          </view> 
+                      </view> 
+                    </block> 
+                  </view>
+                </scroll-view>
+          </swiper-item>
+    </swiper> -->
+  
+</view>
+</view>

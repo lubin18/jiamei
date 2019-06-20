@@ -1,0 +1,186 @@
+/* pages/goods_detail/goods_detail.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color:#ffffff;
+  font-size: 32rpx;
+}
+.top{
+    width: 100%;
+    height: 750rpx;
+}
+.img1{
+  width: 100%;
+  height: 100%;
+}
+.middle{
+  width: 95%;
+  margin: 0 auto;
+}
+.name{
+  padding:20rpx 0; 
+}
+.price{
+  padding:20rpx 0;
+  color: #FF0000; 
+}
+.oldp{
+  font-size: 26rpx;
+  color: #ABABAB;
+}
+.oldmoney{
+  text-decoration: line-through;
+}
+.yun{
+  font-size: 30rpx;
+  padding:20rpx 0; 
+  display: flex;
+  justify-content: space-between
+}
+.shadow{
+  height: 22rpx;
+  width: 100%;
+  background-color: #F0F0F2;
+}
+.fenlei{
+  width: 95%;
+  margin: 0 auto;
+  height: 160rpx;
+  font-size: 30rpx;
+}
+.xuan,.numall,.shezhi{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx dashed #ccc;
+}
+
+.numall,.shezhi{
+  border-bottom: none;
+}
+.shezhi>view{
+  height:40rpx;
+  width: 40rpx;
+  border-radius: 40rpx;
+  /* border: 1px solid #ccc; */
+  line-height: 40rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.jian{
+  border: 1px solid #6E33D0;
+  color: #6E33D0;
+  font-size: 36rpx;
+}
+.num{
+  padding: 0 10rpx;
+  color: #999999;
+}
+.jia{
+  /* border: 1px solid #6E33D0; */
+  color: #fff;
+  font-size: 36rpx;
+  background: #6E33D0
+}
+.zong{
+  /* position: relative; */
+  height: 100%;
+}
+swiper {
+/* display:block; */
+height:100%;
+/* position: absolute; */
+
+}
+
+.swiper-tab{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  width: 100%;
+ justify-content: space-around
+}
+.active{
+  color: #6E33D0;
+  border-bottom: 4rpx solid #6E33D0
+}
+.foot{
+  background: #fff;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ display: flex;
+ padding-left: 5rpx;
+
+}
+.foot1{
+  width: 34%;
+  font-size: 28rpx;
+  padding-top: 15rpx;
+  
+}
+.foot2,.foot3{
+  width:10%;
+  text-align: center
+}
+.foot2>image{
+  width:50rpx;
+  height:50rpx;
+  margin-top: 25rpx;
+}
+.foot3>image{
+  width:50rpx;
+  height:50rpx;
+  margin-top: 25rpx;
+
+}
+.foot4,.foot5{
+  width: 23%;
+  line-height: 100rpx;
+  background: #5527B1;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+}
+.foot4{
+  background: #6E33D0;
+}
+.yuyuejin{
+  color: red;
+  font-size: 32rpx;
+}
+.list{
+  width: 90%;
+  display: flex;
+  margin: 20rpx auto;
+}
+.con1,.con2{
+  width: 36%;
+}
+
+.con1>image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.con3{
+  float: right;
+  text-align: center;
+ width:28%;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #FF3399;
+  border-radius: 30rpx;
+  border: 3rpx solid #FF3399;
+}
+.yname{
+  font-size: 36rpx;
+}
+.con2{
+  line-height: 60rpx;
+}
+.star>image{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,172 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+    <view class='bj'>
+    </view>
+  <view class='all'>
+    <!-- 弹出层内容，其中的“”中绑定让弹出层消失的函数：bindtap="hide" -->
+    <view class="modal-box" hidden="{{flag}}" >
+      <view class="modal-body">
+        <view class="modal-content">
+          <view class="knowBtn">
+            <text>到店请扫码</text>
+            <image class="erweima" src='../images/daodianma.png'></image> 
+            <view bindtap="hide" style='margin-top:20rpx;color:#fff'>关闭</view>        
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='all1'>
+      <view class='top'>
+        <view class='touxiang'>
+          <open-data type="userAvatarUrl"></open-data>
+          <open-data type="userNickName" lang="zh_CN"></open-data>
+        </view>
+        <button open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo"></button>
+        <view class='name'>
+          <view>
+            <open-data type="userNickName" lang="zh_CN"></open-data>
+          </view>
+          <image class="jinka" src='{{style}}'></image>
+        </view>
+        <!-- 触发弹出层：bindtap="show" -->
+        <view class='ma' bindtap="show">
+          <view>
+            <image class='daodianma' src='../images/daodianma.png'></image>
+          </view>
+          <view>到店二维码</view>
+        </view>
+      </view>
+      <view class='fenlei'>
+        <view class='shang'>
+          <view class="shang1">
+            <navigator url="/pages/my_chong/my_chong" hover-class="none">
+              <image src="../images/chongzhi.png" class="tubiao"></image>
+              <view>充值</view>
+            </navigator>
+          </view>
+          <view class="shang1">
+            <navigator url="/pages/kabao/kabao" hover-class="none">
+              <image src="../images/kabao1.png" class="tubiao"></image>
+              <view>卡包</view>
+            </navigator>
+          </view>
+          <view class="shang1">
+            <navigator url="/pages/duihuan/duihuan" hover-class="none">
+              <image src="../images/duihuan.png" class="tubiao"></image>
+              <view>兑换</view>
+            </navigator>
+          </view>
+          <view class="shang1">
+            <navigator url="/pages/fenxiang/index" hover-class="none">
+              <image src="../images/fenxiang.png" class="tubiao"></image>
+              <view>分享</view>
+            </navigator>
+          </view>
+          <view class="shang1">
+            <navigator url="/pages/yuyue/index" hover-class="none">
+              <image src="../images/yuyue2.png" class="tubiao"></image>
+              <view>预约</view>
+            </navigator>
+          </view>
+        </view>
+        <view class="xia">
+          <view class="xia1">
+            <view class='xia1v'>预收</view>
+            <view class='xia1v'>增值</view>
+            <view class='xia1v'>奖励</view>
+            <view class='xia1v xia1vl'>积分</view>
+          </view>
+          <view class="xia2">
+            <view class='xiam' wx:for="{{list4}}" wx:key="index">{{item.money}}</view>
+          </view>
+          
+        </view>
+      </view>
+      <view class='order'>
+        <view class='title'>
+          <view>我的订单</view>
+          <view class='look'>查看全部订单></view>
+        </view>
+        <view class='list'>
+        <navigator  url="/pages/daifu/daifu" hover-class="none">
+          <view class='listcon'>
+            <image src='../images/daifukuan@2x.png'></image>
+            <view>待付款</view>
+          </view>
+        </navigator>
+        <navigator url="/pages/daifu/daifu" hover-class="none">
+          <view class='listcon'>
+            <image src='../images/yizhifu@2x.png'></image>
+            <view>已付款</view>
+          </view>
+        </navigator>
+
+          <view class='listcon'> 
+            <image src='../images/riji@2x.png'></image>
+            <view>我的日记</view>
+          </view>
+          <view class='listcon'>
+           <image src='../images/pinjia.png'></image>
+            <view>评价中心</view>
+          </view>
+        </view>
+      </view>
+      <view class='gongneng'>
+        <view class='gongneng1'>
+          
+          <navigator class='gongneng1_1' url="/pages/chong_detail/chong_detail" hover-class="none">
+            <image class='img1' src='../images/chongzhixijiel.png'></image>
+            <view class='txt1'>充值明细</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </navigator>
+          <navigator class='gongneng1_1' url="/pages/jifen_detail/jifen_detail">
+            <image class='img1' src='../images/jifenmx.png'></image>
+            <view class='txt1'>积分明细</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </navigator>
+
+          <navigator class='gongneng1_3' url="/pages/xiaofei_detail/xiaofei_detail">
+            <image class='img1' src='../images/xiaofeidetail.png'></image>
+            <view class='txt1'>消费明细</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </navigator>
+        </view>
+        <navigator open-type='switchTab'  url="/pages/index/index" hover-class="none">
+        <view class='gongneng2'>
+          <view class='gongneng1_3'>
+            <image class='img1' src='../images/shoppingMall.png'></image>
+            <view class='txt1'>微信商城</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </view>
+        </view>
+        </navigator>
+        <view class='gongneng3'>
+        <navigator url="/pages/tuijian/tuijian">
+          <view class='gongneng1_1'>
+            <image class='img1' src='../images/tuijian.png'></image>
+            <view class='txt1'>我的推荐</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </view>
+          </navigator>
+          <view class='gongneng1_3'>
+            <image class='img1' src='../images/myteam.png'></image>
+            <view class='txt1'>我的团队</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </view>
+        </view>
+        <view class='gongneng2'>
+          <view class='gongneng1_3'>
+            <image class='img1' src='../images/shouhuodizhi.png'></image>
+            <view class='txt1'>收货地址</view>
+            <image class='img2' src='../images/xiangqing.png'></image>
+          </view>
+        </view>
+
+        <button style='margin:50rpx auto' type='warn'>注销</button>
+
+      </view>
+    </view>
+  </view>
+
+</view>

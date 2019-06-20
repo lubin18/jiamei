@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my_chong/my_chong",
+    
+    "pages/riji_detail/riji_detail",
+    "pages/goods_detail/goods_detail",
+    "pages/tuijian/tuijian",
+    "pages/xiaofei_detail/xiaofei_detail",
+    "pages/jifen_detail/jifen_detail",
+    "pages/chong_detail/chong_detail",
+    "pages/daifu/daifu",
+    "pages/yuyue/yuyue",
+    "pages/share/share",
+    "pages/duihuan/duihuan",
+    "pages/my/my",
+    "pages/kabao/kabao",
+    "pages/yangzhiguan/yangzhiguan",
+    "pages/service/service",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#f5f5f5",
+    "color": "#a9b7b7",
+    "selectedColor": "#6b36cf",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "./pages/images/shangc.png",
+        "selectedIconPath": "./pages/images/shangc1.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+       "iconPath": "./pages/images/fuwu.png",
+      "selectedIconPath": "./pages/images/fuwu1.png"
+      },
+      {
+        "pagePath": "pages/yangzhiguan/yangzhiguan",
+        "text": "颜值馆",
+       "iconPath": "./pages/images/yanzhi.png",
+      "selectedIconPath": "./pages/images/yanzhi1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "购物车",
+       "iconPath": "./pages/images/gouwuc.png",
+      "selectedIconPath": "./pages/images/gouwuc1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./pages/images/wode.png",
+        "selectedIconPath": "./pages/images/wode1.png"
+      }
+    ]
+  }
+}

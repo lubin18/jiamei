@@ -1,0 +1,230 @@
+/* pages/service/service.wxss */
+/* 头部轮播图 */
+.banner{
+  width: 100%;
+  height: 300rpx;
+  /* border: 1rpx solid red; */
+}
+.banner swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+/* 自助服务 */
+.selfsupport{
+  width: 100%;
+}
+.sfcontent{
+  width: 91%;
+  margin: 15rpx auto;
+  padding: 20rpx;
+  /* border: 1rpx solid red; */
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.sftitle{
+  height: 50rpx;
+  font-size: 30rpx;
+}
+.sftitle text{
+  position: relative;
+  height: 100%;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+.sftitle text::before{
+  content: "";
+  width: 5rpx;
+  height: 30rpx;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+.sfnav{
+  height: 250rpx;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sfnavleft{
+  /* display: block; */
+  width: 35%;
+  height: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.guhao{
+  display: block;
+  height: 100rpx;
+  width: 100rpx;
+  /* border: 1rpx solid green; */
+  margin-top: 50rpx;
+}
+.sfnavleft text{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-top: 10rpx;
+}
+.sfnavright{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sfnavright image{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  /* border: 1rpx solid red; */
+  margin: 20rpx auto 0;
+}
+.sfnavright text{
+  display: block;
+  font-size: 28rpx;
+  text-align: center;
+}
+.sfn{
+  width: 49%;
+ margin: 5rpx 0;
+}
+.sfn1{
+  border-left: 1rpx solid #eee;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.sfn2{
+  border-bottom: 1rpx solid #eee;
+}
+.sfn3{
+   border-left: 1rpx solid #eee;
+   border-right: 1rpx solid #eee;
+}
+/* 会员通道 */
+.memberchannel{
+ width: 100%;
+}
+.mbcontent{
+  width: 91%;
+  margin: 0 auto;
+  /* border: 1rpx solid red; */
+   padding: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.mbtitle{
+  height: 50rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.mbtitle text{
+  position: relative;
+  height: 100%;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+.mbtitle text::before{
+  content: "";
+  width: 5rpx;
+  height: 30rpx;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+.mbnav{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 0rpx 0rpx;
+}
+.mbnav>navigator{
+  width: 20%;
+  margin-bottom: 15rpx;
+}
+.mbnav image{
+  width:50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 0 auto;
+}
+.mbnav text{
+  font-size: 23rpx;
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+}
+/* 医生团队 */
+.doctorteam{
+ width: 100%;
+}
+.docontent{
+  width: 91%;
+  margin: 15rpx auto;
+  /* border: 1rpx solid red; */
+   padding: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.dotitle{
+  height: 50rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.dotitle text{
+  position: relative;
+  height: 100%;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+.dotitle>navigator{
+  font-size: 30rpx;
+  color: #ccc;
+}
+.dotitle text::before{
+  content: "";
+  width: 5rpx;
+  height: 30rpx;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+.donav{
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  padding: 20rpx 0;
+}
+.dobox{
+  display: inline-block;
+  width: 32%;
+  /* border: 1rpx solid red; */
+  margin-left: 10rpx;
+}
+.dobox image{
+  width: 100%;
+  height: 250rpx;
+}
+.donav text{
+  display: block;
+  text-align: center;
+}
+.docname{
+  font-size: 28rpx;
+  padding: 10rpx 0;
+}
+.doclevel{
+  font-size: 20rpx;
+  color: #666;
+}

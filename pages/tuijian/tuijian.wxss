@@ -1,0 +1,46 @@
+/* pages/tuijian/tuijian.wxss */
+page{
+  height: 100%; /* 你要设置的高度 */
+  background: #f5f5f5;     /* 你要设置的颜色 */
+}
+.all{
+  font-size: 28rpx;
+}
+.img1{
+  width: 100%;
+}
+.list{
+  display: flex;
+  justify-content: space-around;
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 90%;
+  border-radius: 14rpx;
+  margin:20rpx auto;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0 2rpx 2rpx 2rpx #b1b1b1;
+}
+.list>image{
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 5rpx;
+  border-radius: 80rpx;
+}
+.name{
+  width: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.nodata{
+  width: 100%;
+  text-align: center;
+}
+.img2{
+  width:180rpx;
+  height:220rpx;
+  margin-top: 30rpx;
+}
+.nodata>view{
+  color: #9b8a71;
+}

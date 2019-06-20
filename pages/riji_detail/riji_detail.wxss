@@ -1,0 +1,140 @@
+/* pages/riji_detail/riji_detail.wxss */
+page{
+  font-size: 32rpx;
+  height: 100%;
+  background: #EEEEEE;
+}
+.all{
+  width: 100%;
+  background:white;
+  padding:0 5%;
+  box-sizing: border-box;
+}
+.top{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  /* background: pink; */
+  
+}
+.top1{
+  width: 20%;
+  /* text-align: center; */
+}
+.top1>image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+.top2{
+  width: 60%;
+  height: 100rpx;
+  line-height: 50rpx;
+}
+.viewdata{
+  font-size: 26rpx;
+  color: #999999;
+}
+.top3{
+  width:120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  border: 1rpx solid #F12CAF;
+  color: #F12CAF;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+}
+
+.con1{
+  margin:20rpx auto;
+  font-size: 34rpx;
+}
+.con2{
+  font-size: 28rpx;
+}
+.content>image{
+  width:100%;
+  margin: 15rpx auto;
+}
+.bottom{
+width: 100%;
+/* height: 1000rpx; */
+  background:white;
+  padding:0 5%;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.more{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #EEEEEE;
+  margin-bottom: 30rpx;
+}
+.botlist{
+  margin-bottom: 50rpx;
+}
+.prolist{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.prolist>view{
+  padding: 0 15rpx;
+  border: 1px solid #ccc;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  margin: 10rpx 10rpx 0 10rpx;
+  font-size: 26rpx;
+  color: #888888;
+}
+.title{
+  margin: 20rpx 0;
+  color: #8A2BE2;
+  font-size: 26rpx;
+}
+.tu{
+  width: 100%;
+  height: 320rpx;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.tu1{
+  width: 50%;
+}
+.tu1>image{
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+.before{
+  height: 40rpx;
+  width: 150rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  background: rgba(66, 66, 66, 0.6);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color:#fff;
+  font-size: 30rpx;
+}
+.after{
+  height: 40rpx;
+  width: 150rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  background: rgba(66, 66, 66, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  color:#fff;
+  font-size: 30rpx;
+
+}

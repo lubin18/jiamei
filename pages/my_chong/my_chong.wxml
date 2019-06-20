@@ -1,0 +1,47 @@
+<!--pages/chongzhi/index.wxml-->
+<form bindsubmit="formSubmit">
+  <view id='chongzhi' class='container'>
+    <view class='bj'>
+      <image src='../images/chongzhibanner.png'></image>
+    </view>
+    <view class='tubiao'>
+      <image class='yimgyf' src='../images/yufu.png'></image>
+      <text class='yufu'>预付/定金</text>
+    </view>
+    <view class='chongzhi'>
+      <view class='kuang'>
+        <view class='biaoti'>预付/定金金额</view>
+        <view class='inp1' >
+          <input name="input" type="number" bindinput='jiner'  placeholder-class='pla1' placeholder='预付/定金金额' />
+        </view>
+        <button class='zhifu' formType='submit' >确定支付</button>
+       
+<!-- <view class='button_container'>
+  <block wx:for="{{buttons}}" wx:key="buttons">
+  <button class='{{item.checked?"checked_button":"normal_button"}}' data-id='{{item.id}}' bindtap='checkButtonTap'>{{item.name}}</button>
+  </block>
+</view>
+<text>{{msg}}</text> -->
+
+
+      </view>
+    </view>
+     <view class='tubiao'>
+      <image class='yimgyf' src='../images/huodong.png'></image>
+      <text class='yufu'>储值卡活动</text>
+    </view>
+    <view class='chuzhika'wx:for="{{cards}}" wx:for-items="{{cards}}" wx:key="navItems"  wx:for-index="itemIdx">
+      <image class='kaimg' src='{{item.img2}}'></image>
+      <view class='left'>
+        <view class='mianzhi'>￥{{item.mianzhi}}</view>
+        <view class='zengjin'>赠送金额:{{item.zengjin}}元</view>
+        <view class='zengfen'>赠送积分:{{item.zengfen}}积分</view>
+      </view>
+      <view class='right'>
+        <view class='kaming'>{{item.kaming}}</view>
+        <view class='riqi'>{{item.riqi}}</view>
+      </view>
+      <view class='goumai'bindtap="goumai">购买</view>
+    </view>
+  </view>
+</form>

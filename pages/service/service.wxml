@@ -1,0 +1,129 @@
+<!--pages/service/service.wxml-->
+<view class="container">
+<!-- 头部轮播图 -->
+<swiper class='banner'  autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" duration="{{banner.duration}}" indicatorDots="{{banner.indicatorDots}}" circular="banner.circular" indicator-color="#ccc" indicator-active-color="blue">
+    <block wx:for="{{banner.urlimg}}" wx:for-index="idx" wx:for-item="itemname">
+        <swiper-item>
+            <image src='{{itemname}}'></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 自助服务 -->
+<view class='selfsupport'>
+    <view class='sfcontent'>
+        <view class='sftitle'>
+            <text>自助服务</text>
+        </view>
+        <view class='sfnav'>
+            <navigator class='sfnavleft'>
+                <image src='../images/guahao.png' class='guhao'></image>
+                <text>自助挂号</text>
+            </navigator>
+            <view class='sfnavright'>
+                 <navigator class='sfn sfn1'>
+                      <image src='../images/jiaofei.png'></image>
+                      <text>自助缴费</text>
+                 </navigator>
+                 <navigator class='sfn sfn2'>
+                      <image src='../images/zhanghu.png'></image>
+                      <text>我的账户</text>
+                 </navigator>
+                 <navigator class='sfn sfn3'>
+                      <image src='../images/haoyou.png'></image>
+                      <text>推荐好友</text>
+                 </navigator>
+                 <navigator class='sfn sfn4'>
+                      <image src='../images/daohang.png'></image>
+                      <text>医院导航</text>
+                 </navigator>
+            </view>
+        </view>
+    </view> 
+</view>
+<!-- 会员通道 -->
+<view class='memberchannel'>
+    <view class='mbcontent'>
+        <view class='mbtitle'>
+            <text>会员通道</text>
+        </view>
+        <view class='mbnav'>
+            <navigator>
+                <image src='../images/guahao1.png' class='mc'></image>
+                <text>自助挂号</text>
+            </navigator>
+            <navigator>
+                <image src='../images/jiaofei1.png' class='mc'></image>
+                <text>自助缴费</text>
+            </navigator>
+            <navigator>
+                <image src='../images/zhanghu1.png' class='mc'></image>
+                <text>我的账号</text>
+            </navigator>
+            <navigator>
+                <image src='../images/huiyuan.png' class='mc'></image>
+                <text>会员积分</text>
+            </navigator>
+            <navigator>
+                <image src='../images/haoyou1.png' class='mc'></image>
+                <text>推荐好友</text>
+            </navigator>
+            <navigator>
+                <image src='../images/zaixian.png' class='mc'></image>
+                <text>在线预约</text>
+            </navigator>
+            <navigator>
+                <image src='../images/chaixian.png' class='mc'></image>
+                <text>拆线预约</text>
+            </navigator>
+            <navigator>
+                <image src='../images/huanyao.png' class='mc'></image>
+                <text>换药预约</text>
+            </navigator>
+            <navigator>
+                <image src='../images/fucha.png' class='mc'></image>
+                <text>复查预约</text>
+            </navigator>
+            <navigator>
+                <image src='../images/toushu.png' class='mc'></image>
+                <text>在线投诉</text>
+            </navigator>
+        </view>
+    </view>
+</view>
+<!-- 医生团队 -->
+<view class='doctorteam'>
+    <view class='docontent'>
+        <view class='dotitle'>
+            <text>医生团队</text>
+            <navigator>更多</navigator>
+        </view>
+        <scroll-view class='donav' scroll-x="true" >
+            <navigator class='dobox'>
+                <image src='../images/dayan.png'></image>
+                <text class='docname'>蒙喜永</text>
+                <text class='doclevel'>佳美旗舰院院长</text>
+            </navigator>
+            <navigator class='dobox'>
+                 <image src='../images/dayan.png'></image>
+                <text class='docname'>金闽喜</text>
+                <text class='doclevel'>整形外科医学博士</text>
+            </navigator>
+            <navigator class='dobox'>
+                <image src='../images/dayan.png'></image>
+                <text class='docname'>柳宗元</text>
+                <text class='doclevel'>医学博士</text>
+            </navigator>
+            <navigator class='dobox'>
+                 <image src='../images/dayan.png'></image>
+                <text class='docname'>柳宗元</text>
+                <text class='doclevel'>医学博士</text>
+            </navigator>
+            <navigator class='dobox'>
+                 <image src='../images/dayan.png'></image>
+                <text class='docname'>柳宗元</text>
+                <text class='doclevel'>医学博士</text>
+            </navigator>
+        </scroll-view>
+    </view>
+</view>
+</view>

@@ -1,0 +1,159 @@
+/* pages/yangzhiguan/yangzhiguan.wxss */
+.myheader{
+  width: 100%;
+  height: 60rpx;
+  background: #fff;
+  /* border: 1rpx solid red; */
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+}
+.myscroll{
+  padding: 10rpx 0rpx;
+  display: flex;
+  white-space: nowrap;
+
+}
+.myztt{
+  display: inline-block;
+  width: 20%;
+  /* border: 1rpx solid red; */
+  text-align: center;
+  position: relative;
+  line-height: 60rpx;
+}
+.myzactive::after{
+  content: "";
+  width: 60%;
+  height: 5rpx;
+  left: 20%;
+  position: absolute;
+  bottom: 0rpx;
+  background: #6b36cf;
+  font-weight: bold;
+}
+/* table切换内容部分 */
+.mycontent{
+  width: 100%;
+  margin-top: 60rpx;
+}
+.recommend{
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items:flex-start;
+ 
+}
+.recombox{
+  width: 48%;
+  background: #fff;
+  margin-top: 20rpx;
+  border-radius: 15rpx;
+  padding-bottom: 10rpx;
+  /* border: 1rpx solid red; */
+}
+.myzpic1{
+  width: 100%;
+  height: 330rpx;
+}
+
+.myzinstr{
+  display: block;
+  font-size: 24rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding:0 15rpx;
+}
+.myzbottom{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* border: 1rpx solid red; */
+  height: 60rpx;
+  padding: 0 15rpx;
+}
+.myzbottomleft,.myzbottomrigt{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.myzbottomleft image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.myzbottomleft text{
+  padding-left: 15rpx;
+  font-size: 26rpx;
+}
+.myzbottomrigt image{
+   width: 40rpx;
+  height: 40rpx;
+  /* border: 1rpx solid red; */
+}
+.myzbottomrigt text{
+  font-size: 26rpx;
+}
+/* 写日记的小图标 */
+.myzrj{
+  position: fixed;
+  width: 100%;
+  /* border: 1rpx solid red; */
+  bottom: 110rpx;
+}
+.rjbox{
+  /* display: block; */
+  margin: 0 auto;
+  width: 220rpx;
+  height: 90rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35rpx;
+  background-color: #6b36cf;
+}
+.rjbox image{
+  display: block;
+  height: 40rpx;
+  width: 40rpx;
+  /* border: 1rpx solid red; */
+}
+.rjbox text{
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  padding-left: 10rpx;
+}
+@keyframes slidedown {
+  from {
+    bottom: 110rpx;
+  }
+  to {
+    bottom: 0rpx;
+  }
+}
+.slidedown {
+  animation: slidedown 0.2s linear ;
+}
+.slideup {
+  animation: slideup 0.2s linear ;
+}
+@keyframes slideup {
+  from {
+    bottom: 0rpx;
+  }
+  to {
+    bottom: 110rpx
+  }
+}

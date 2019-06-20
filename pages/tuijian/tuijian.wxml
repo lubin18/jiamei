@@ -1,0 +1,31 @@
+<!--pages/tuijian/tuijian.wxml-->
+<view class='all'>
+    <image class='img1' src='../images/hengtu.png'></image>
+    <view>
+      <view class='nodata' wx:if="{{modeId==default}}">
+        <image class='img2' src='../images/download.png'></image>
+        <view>您还没有相关推荐数据...</view>
+        <view>赶快推荐好友吧!</view>
+      </view>
+      <view wx:else>
+        <view class='list'>
+            <image src='../images/touxiang1.png'></image>
+            <view class='name'>莫风dsadasdad</view>
+            <view>18654545544</view>
+            <view>2019-10-20</view>
+        </view>
+        <view class='list'>
+            <image src='../images/touxiang1.png'></image>
+            <view class='name'>莫风dsadasdad</view>
+            <view>18654545544</view>
+            <view>2019-10-20</view>
+        </view>
+        <view class='list'>
+            <image src='../images/touxiang1.png'></image>
+            <view class='name'>莫风dsadasdad</view>
+            <view>18654545544</view>
+            <view>2019-10-20</view>
+        </view>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/jifen_detail/jifen_detail.wxss */
+/* pages/chong_detail/chong_detail.wxss */
+.tou{
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  background: #6B36CF;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.tou>view{
+  width: 25%;
+  text-align: center;
+  height: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+  display: inline-block
+}
+.list{
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  display: flex;
+}
+.list>view{
+  color: #8B7575;
+  width: 25%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  border-bottom: 1rpx solid #E6E6E6;
+}
+.time{
+   white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

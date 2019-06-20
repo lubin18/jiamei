@@ -1,0 +1,48 @@
+/* pages/kabao/kabao.wxss */
+/* pages/kabao/index.wxss */
+.top{
+  height: 60rpx;
+  width: 90%;
+  line-height: 60rpx;
+  display: flex;
+  border-bottom: 1rpx solid #ECECEC;
+  margin: 0 auto;
+}
+.logo1{
+  width: 60rpx;
+  height: 60rpx;
+}
+.lname{
+  /* width: 60rpx; */
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+.swiper-tab{
+    width: 90%;
+  margin: 0 auto;
+
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 7%;
+    line-height: 200%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 25%; 
+    color:#434343;
+}
+.active{
+    color:#F65959;
+    border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  text-align: center;
+  height: 93%;
+}
+.swiper-item{
+    width: 100%;
+    background:pink;
+    height: 100%;
+}

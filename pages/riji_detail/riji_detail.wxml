@@ -1,0 +1,76 @@
+<!--pages/riji_detail/riji_detail.wxml-->
+<view class='all'>
+  <view class='top'>
+      <view class='top1'>
+          <image src='../images/touxiang1.png'></image>
+      </view>
+      <view class='top2'>
+          <view>李浩</view>
+          <view class='viewdata'>2019-06-02 共3篇日记</view>
+      </view>
+      <view class='top3'>
+          +关注
+      </view>
+  </view>
+  <view class='content'>
+      <view class='con1'>变美过程第100天</view>
+      <view class='con2'>今天大家都会洒回到家萨克活动时间爱德华撒娇都是阿萨德按时大萨达的打算按时打算今天大家都会洒回到家萨克活动时间爱德华撒娇都是阿萨德按时大萨达的打算按时打算今天大家都会洒回到家萨克活动时间爱德华撒娇都是阿萨德按时大萨达的打算按时打算</view>
+      <image src='../images/shuangyanpi.png'></image>
+      <image src='../images/shuangyanpi.png'></image>
+      <image src='../images/shuangyanpi.png'></image>
+  </view>
+</view>
+<view class='bottom'>
+    <view class='more'>更多日记</view>
+    <view class='botlist'>
+      <view class='top'>
+        <view class='top1'>
+            <image src='../images/touxiang1.png'></image>
+        </view>
+        <view class='top2'>
+            <view>老沈</view>
+            <view class='viewdata'>2019-06-02</view>
+        </view>
+      </view>
+      <view class='prolist'>
+          <view>项目1</view><view>大萨达</view><view>大萨达萨达撒</view><view>打算打算多</view><view>项dsad目1</view><view>湿哒哒大所</view><view>大萨达</view>
+      </view>
+      <view class='title'>三分钟除眼袋</view>
+      <view class='tu'>
+          <view class='tu1'>
+              <image src='../images/3.png'></image>
+              <view class='before'>BEFORE</view>
+          </view>
+          <view class='tu1'>
+              <image src='../images/4.png'></image>
+              <view class='after'>AFTER</view>
+          </view>
+      </view>
+    </view>
+    <view class='botlist'>
+      <view class='top'>
+        <view class='top1'>
+            <image src='../images/touxiang1.png'></image>
+        </view>
+        <view class='top2'>
+            <view>老沈</view>
+            <view class='viewdata'>2019-06-02</view>
+        </view>
+      </view>
+      <view class='prolist'>
+          <view>项目1</view><view>大萨达</view><view>大萨达萨达撒</view><view>打算打算多</view><view>项dsad目1</view><view>湿哒哒大所</view><view>大萨达</view>
+      </view>
+      <view class='title'>三分钟除眼袋</view>
+      <view class='tu'>
+          <view class='tu1'>
+              <image src='../images/3.png'></image>
+              <view class='before'>BEFORE</view>
+          </view>
+          <view class='tu1'>
+              <image src='../images/4.png'></image>
+              <view class='after'>AFTER</view>
+          </view>
+      </view>
+    </view>
+    
+</view>

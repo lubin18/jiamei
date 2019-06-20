@@ -1,0 +1,160 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+<view class='top'>
+    <image class='img1' src='../images/good1.jpg'></image>
+</view>
+<view class='middle'>
+    <view class='name'>【自体脂肪丰苹果肌】轮廓流畅 可萌可甜</view>
+    <view class='price'>￥3980</view>
+    <view class='oldp'>原价:<text class='oldmoney'>￥6988</text></view>
+    <view class='yun'>
+      <view>运费：0</view>
+      <view>月销：0笔</view>
+      <view>库存数：{{kucun}}</view>
+    </view>
+</view>
+<view class='shadow'>
+</view>
+<view class='fenlei'>
+  <view class='xuan'>
+    <view>选择分类</view>
+    <view bindtap='dianji'><view hidden="{{hideup}}">∧</view><view hidden="{{hidedown}}">∨</view></view>
+  </view>
+  <view class='numall' hidden="{{hide}}">
+    <view>数量</view>
+    <view class='shezhi'>
+      <view class='jian'bindtap='jian' >－</view>
+      <view class='num'>{{num}}</view>
+      <view class='jia' bindtap='jia'>＋</view>
+    </view>
+  </view>
+</view>
+<view class='shadow'>
+</view>
+<view class='zong'>
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">详情</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">日记</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">医生</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">百科</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view>详情</view>
+  </swiper-item>
+  <swiper-item>
+    <view>日记</view>
+  </swiper-item>
+  <swiper-item>
+    <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+
+    <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+    <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+    <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+        <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+        <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+        <view class='list'>
+      <view class='con1'>
+        <image src='../images/yisheng.jpg'></image>
+      </view>
+      <view class='con2'>
+        <view class='yname'>成烈</view>
+        <view>技术院长</view>
+        <view class='star'>
+          <image src='../images/star.png'></image>
+        </view>
+      </view>
+      <view class='con3'>咨询</view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>百科</view>
+  </swiper-item>
+</swiper>
+</view>
+<view class='foot'>
+  <view class='foot1'>
+    <view>预约金:<text class='yuyuejin'>￥25648</text></view>
+    <view>到院再付:<text>￥0</text></view>
+  </view>
+  <view class='foot2'>
+    <image src='../images/zixun.png'></image>
+  </view>
+  <view class='foot3'>
+    <image src='../images/home.png'></image>
+  </view>
+  <view class='foot4'>加入购物车</view>
+  <view class='foot5'>立即购买</view>
+</view>

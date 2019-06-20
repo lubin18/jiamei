@@ -1,0 +1,380 @@
+<!--pages/yangzhiguan/yangzhiguan.wxml-->
+<view class='container'>
+  <view class='myz'>
+      <view class='myheader'>
+          <scroll-view class='myscroll' scroll-x="true">
+              <view class="myztt {{currentab==0?'myzactive':''}}" data-current="0"  bindtap='swichNav'>推荐</view>
+              <view class="myztt {{currentab==1?'myzactive':''}}"  data-current="1"  bindtap='swichNav'>达人秀</view>
+              <view class="myztt {{currentab==2?'myzactive':''}}"  data-current="2"  bindtap='swichNav'>大咖说</view>
+              <view class="myztt {{currentab==3?'myzactive':''}}"  data-current="3"  bindtap='swichNav'>百科</view>
+              <view class="myztt {{currentab==4?'myzactive':''}}"  data-current="4"  bindtap='swichNav'>小白说</view>
+              <view class="myztt {{currentab==5?'myzactive':''}}"  data-current="4"  bindtap='swichNav'>小白说</view>
+              <view class="myztt {{currentab==6?'myzactive':''}}"  data-current="4"  bindtap='swichNav'>小白说</view>
+              <view class="myztt {{currentab==7?'myzactive':''}}"  data-current="4"  bindtap='swichNav'>小白说</view>
+          </scroll-view>
+      </view>
+      <view class='mycontent'>
+          <!-- 推荐页面 -->
+          <view class='recommend' wx:if="{{currentab==0}}" >
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+          </view>
+          <!-- 达人秀页面 -->
+          <view class='recommend' wx:if="{{currentab==1}}" >
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>达人秀</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+          </view>
+          <!-- 大咖说页面 -->
+          <view class='recommend' wx:if="{{currentab==2}}" >
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>大咖说</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+          </view>
+          <!-- 百科页面 -->
+          <view class='recommend' wx:if="{{currentab==3}}" >
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>百科</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>小白说</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+          </view>
+          <!-- 小白说页面 -->
+          <view class='recommend' wx:if="{{currentab==4}}" >
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+            <navigator class='recombox'>
+                <image class='myzpic1' src='../images/boniaosuan.png'></image>
+                <!-- <view>
+                </view> -->
+                <text class='myzinstr'>今天天气晴朗，万里乌云，适合郊游踏青！哈哈哈哈哈哈哈hahahah</text>
+                <view class='myzbottom'>
+                  <view class='myzbottomleft'>
+                      <image src='../images/meibi.png'></image>
+                      <text>hello</text>
+                  </view>
+                  <view class='myzbottomrigt'>
+                      <image src='../images/aixing.png'></image>
+                      <text>10000</text>
+                  </view>  
+                </view>
+            </navigator>
+          </view>
+      </view>
+      <view wx:if="{{show}}" class='myzrj {{aniStyle}}'>
+          <navigator class='rjbox {{aniStyle?"slideup":"slidedown"}}'>
+              <image src='../images/xiangji.png'></image>
+              <text>写日记</text>
+          </navigator>
+      </view>
+  </view>
+</view>

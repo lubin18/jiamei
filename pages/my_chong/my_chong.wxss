@@ -1,0 +1,139 @@
+/* pages/my_chong/my_chong.wxss */
+/* pages/chongzhi/index.wxss */
+/* #chongzhi .container{
+  background: #F5F5F5;
+  height: 100%;
+  width: 100%;
+} */
+#chongzhi .bj{
+  width: 100%;
+}
+#chongzhi .bj>image{
+  width: 100%;
+}
+#chongzhi .tubiao{
+  height: 60rpx;
+  width:95%;
+  /* background: pink; */
+  line-height: 60rpx;
+  margin: 0 auto;
+}
+#chongzhi .yufu{
+  vertical-align:middle;
+  padding-left: 15rpx;
+}
+#chongzhi .yimgyf{
+  vertical-align:middle;
+  border: none;
+  height: 40rpx;
+  width: 40rpx;
+}
+#chongzhi .chongzhi{
+  height: 300rpx;
+  width: 95%;
+  margin: 10rpx auto;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 2rpx 2rpx  #BDBDBD;
+}
+#chongzhi .kuang{
+  width: 90%;
+  margin:0 auto;
+}
+#chongzhi .biaoti{
+  height:80rpx;
+  line-height: 80rpx;
+}
+#chongzhi .inp1{
+  height:60rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+#chongzhi .pla1{
+  color: #ccc;
+  font-size: 32rpx;
+}
+#chongzhi .zhifu{
+  height:80rpx;
+  margin-top: 50rpx;
+  line-height: 80rpx;
+  background: #4C71F6;
+  color: #fff;
+}
+#chongzhi .chuzhika{
+  width: 95%;
+  margin: 20rpx auto;
+  height:200rpx;
+  margin-top: 20rpx;
+  color: #fff;
+  position: relative;
+}
+#chongzhi .kaimg{
+  width: 100%;
+  height: 200rpx;
+}
+#chongzhi .left{
+  position: absolute;
+  top: 0px;
+  width: 40%;
+  height: 200rpx;
+  /* background: pink; */
+  border-right: 1rpx solid #ccc;
+}
+#chongzhi .right{
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  width: 60%;
+  height: 200rpx;
+  /* background: pink; */
+  /* border-right: 1rpx solid #ccc; */
+}
+#chongzhi .mianzhi{
+  font-size: 50rpx;
+  margin-top: 10rpx;
+}
+#chongzhi .zengjin,.zengfen{
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+#chongzhi .kaming{
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx
+}
+#chongzhi .riqi{
+  font-size: 25rpx;
+  margin-top: 50rpx;
+  margin-left: 10rpx;
+}
+#chongzhi .goumai{
+  position: absolute;
+  top: 75rpx;
+  right: 35rpx;
+  height: 50rpx;
+  width:100rpx; 
+  font-size: 26rpx;
+  background: red;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+
+
+.button_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+/* 按钮未选中 */
+.normal_button{
+  background: greenyellow
+}
+/* 按钮选中 */
+.checked_button{
+  background: red;
+  color: white
+  
+}

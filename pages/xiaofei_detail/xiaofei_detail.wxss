@@ -1,0 +1,76 @@
+/* pages/xiaofei_detail/xiaofei_detail.wxss */
+.swiper-tab{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height:80rpx;
+    line-height:80rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 32rpx;
+}
+.swiper-tab-item{
+    /* width: 25%;  */
+    color:#434343;
+}
+.active{
+    color:#6B36CF;
+    border-bottom: 4rpx solid #6B36CF;
+}
+swiper{
+  text-align: center;
+  height: 500rpx;
+}
+.swiper-item{
+    width: 100%;
+    background:pink;
+    height: 100%;
+}
+.shadow{
+  width: 100%;
+  height: 12rpx;
+  background: #E6E6E6;
+}
+.tou{
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  background: #6B36CF;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.tou>view{
+  width: 33.3%;
+  text-align: center;
+  height: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+  display: inline-block
+}
+.list{
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  display: flex;
+}
+.list>view{
+  color: #8B7575;
+  width: 33.3%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  border-bottom: 1rpx solid #E6E6E6;
+}
+.time{
+   white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

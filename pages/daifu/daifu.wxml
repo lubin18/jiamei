@@ -1,0 +1,28 @@
+<!--pages/daifu/daifu.wxml-->
+<!-- <view class="swiper-tab"> -->
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">全部</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">待支付</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已支付</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">已完成</view>
+  <view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">已评价</view>
+  </scroll-view>
+<!-- </view> -->
+<view class='shadow'></view>
+<swiper  class="tab-content" current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view >全部</view>
+  </swiper-item>
+  <swiper-item>
+    <view>待支付</view>
+  </swiper-item>
+  <swiper-item>
+    <view>已支付</view>
+  </swiper-item>
+  <swiper-item>
+    <view>已完成</view>
+  </swiper-item>
+  <swiper-item>
+    <view>已评价</view>
+  </swiper-item>
+</swiper>

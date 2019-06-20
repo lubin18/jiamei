@@ -1,0 +1,53 @@
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">线下兑换       </view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">兑换增值       </view>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab">
+    <swiper-item>
+      <view class="con1">
+        <view style='text-align:center'>
+          <text>奖励金金额</text>
+          <view>{{value1}}</view>
+        </view>
+        <view class='jiangli'>
+          <text style='font-size:30rpx;'>奖励金</text>
+          <input placeholder='请输入奖励金' type="number" value='{{money1}}' bindinput="quzhi1"></input>
+        </view>
+        <view class='fujia'>
+          <text style='font-size:30rpx;'>附加信息</text>
+          <textarea class='tianxie' placeholder='请填写附加信息' bindinput="areazhi" value='{{areavalue}}'></textarea>
+        </view>
+        <button  loading="{{loading}}" disabled='{{disabled}}' bindtap='duihuan1'  class='btn1'>兑换</button>
+        <!-- bindtap="duihuan" -->
+
+        <!-- <button type='primary' bindtap="toastBtn">点击弹出默认toast 1</button>
+
+        <button type='primary' bindtap="toastBtn3">显示toast</button>
+
+        <button type='default' bindtap="toastBtn4">隐藏toast</button>
+
+        <toast hidden="{{toastHidden}}" duration="3000" bindchange="toastchange">我是弹出的toast 1</toast> -->
+      </view>
+  
+    </swiper-item>
+    <swiper-item>
+      <view class="con1">
+        <view style='text-align:center'>
+          <text>奖励金余额</text>
+          <view>{{money}}</view>
+        </view>
+        <view class='jiangli'>
+          <text style='font-size:30rpx;'>奖励金</text>
+          <input placeholder='请输入奖励金' bindinput='liandong' maxlength='10' type='number' value='{{inputvalue2}}'></input>
+        </view>
+        <view class='jiangli'>
+          <text style='font-size:30rpx;'>折合增值金</text>
+          <input placeholder='￥xxxx' disabled='disabled' value='{{inputvalue}}' maxlength='10' type='number'></input>
+        </view>
+        <button disabled='{{disabled}}' loading="{{loading}}" bindtap="duihuan2" class='btn1'>兑换</button>
+      </view>
+
+    </swiper-item>
+  </swiper>
+</view>

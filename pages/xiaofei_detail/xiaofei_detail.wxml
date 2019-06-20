@@ -1,0 +1,88 @@
+<!--pages/xiaofei_detail/xiaofei_detail.wxml-->
+<!--pages/kabao/index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">医院端</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">新零售</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">配赠</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">微信商城</view>
+</view>
+<view class='shadow'></view>
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view>
+      <view class='tou'>
+        <view>日期</view>
+        <view>摘要</view>
+        <view>金额</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+       <view class='tou'>
+        <view>日期</view>
+        <view>摘要</view>
+        <view>金额</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+       <view class='tou'>
+        <view>日期</view>
+        <view>摘要</view>
+        <view>金额</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+       <view class='tou'>
+        <view>日期</view>
+        <view>摘要</view>
+        <view>金额</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+      <view class='list'>
+        <view class='time'>2019-06-14 15：35</view>
+        <view>无</view>
+        <view>0.00</view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+

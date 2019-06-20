@@ -1,0 +1,20 @@
+<!--pages/share/share.wxml-->
+<view class='all'>
+  <view class='top1'>
+  推荐好友加入我们
+  </view>
+  <view class='youhui'>
+  你将得到以下优惠
+  </view>
+  <view class='sange'>
+    <view>• 壮大个人团队，打造个人</view>
+    <view>• 分享推荐好友，获得推荐奖励</view>
+    <view>• 分享推荐好友的顾客服务奖励</view>
+  </view>
+  <view class='ma'>
+    <image src="data:image/png;base64,{{imgUrl}}"/>
+  </view>
+  <view class='tui'>
+  推荐好友扫描二维码并注册
+  </view>
+</view>
